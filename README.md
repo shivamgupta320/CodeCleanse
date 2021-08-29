@@ -1,6 +1,6 @@
 # Code Cleanse
-CodeCleanse aims to automate sophisticated code cleanup process to increase productivity.
-Currently supported Code cleanup process is Label Validator.
+CodeCleanse aims to automate code cleanup process to increase productivity.
+Currently code cleanup process supports Label Validator.
 
 # Abstract
 Dead pieces of code spring up naturally during software development. Remove dead code wherever possible. It slows you down, requires maintenance over time, costs time and money.
@@ -9,7 +9,7 @@ Dead pieces of code spring up naturally during software development. Remove dead
 
 **Label Validator menu**
 - Check duplicate values within CustomLabels.labels [1]
-- Check all unused labels in complete Repository (pages, classes and lwc) [2]
+- Check all unused labels in complete Repository (pages, classes and LWC) [2]
 - Check all labels imported from other repositories [3]
 - Check all unused imported Labels in LWC Components [4]
 
@@ -19,31 +19,31 @@ Dead pieces of code spring up naturally during software development. Remove dead
 - `<fullName>...</fullName>` tags are in single line
 - `<value>...</value>` tags are in single line
 - `*.js-meta.xml` prefix is component directory name
-- `*Labels.js` file do not use label
+- `*Labels.js` file will either import or export labels, not directly use them
 
 **Notes**
 - Before fixing duplicate labels, check if they are already part of managed package.
 - Before fixing unused labels, check if other repositories are dependent on it.
 
-## command line usage
+## Usage
+Run complete script inside CodeCleanse within repository
+`$ ./codeCleanse.sh`
 
-`$ ./codeCleanse.sh [menu | fix] [1 | 2 | 3 | 4]`
-
-## Example 1
-
-
-```#!/bin/sh
-# Below usage will execute only Label Validator 4th option
-$ ./codeCleanse.sh menu 4
-```
-
-## Example 2
-
-
-```#!/bin/sh
-# Below usage will fix Label Validator 4th option
-$ ./codeCleanse.sh fix 4
-```
+**Future Scope**
+> `$ ./codeCleanse.sh [menu | fix] [1 | 2 | 3 | 4]`
+> 
+> ## Example 1
+> 
+> ```#!/bin/sh
+> # Below usage will execute only Label Validator 4th option
+> $ ./codeCleanse.sh menu 4
+> ```
+> ## Example 2
+> 
+> ```#!/bin/sh
+> # Below usage will fix Label Validator 4th option
+> $ ./codeCleanse.sh fix 4
+> ```
 
 ## Output
 
