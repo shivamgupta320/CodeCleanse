@@ -132,6 +132,8 @@ do
 done
 ALL_NON_PATTERN_REGISTERED_LABELS=($(echo "${ALL_NON_PATTERN_REGISTERED_LABELS[*]}" | awk {print}))
 
+USED_LABELS_ALL=($(echo "${USED_LABELS_ALL[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
+
 UNUSED_LABELS=()
 for label in "${ALL_NON_PATTERN_REGISTERED_LABELS[@]}"
 do  
