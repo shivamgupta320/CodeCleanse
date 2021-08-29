@@ -1,6 +1,6 @@
 #!/bin/sh
 #title           :codeCleanse.sh
-#description     :Code Cleanse aims to find all unused labels of Repository.
+#description     :Code Cleanse aims to do code cleanup.
 #author          :Shivam Gupta, shivamgupta@salesforce.com
 #date            :20210830
 #version         :1.0.0    
@@ -58,18 +58,17 @@ if [ ${#DUPLICATE_LABELS[@]} -ne 0 ]; then
        echo $DUPLCATE_VALUE_FOUND $label
     done
     echo "\t COUNT =" ${#DUPLICATE_LABELS[@]} $NEEDS_FIX
+    echo "\n\t📝 Note:- Before fixing duplicate labels, check if they are already part of managed package."
 else
     echo $ALL_GOOD
 fi
-echo "\n\t📝 Note:- Before fixing duplicate labels, check if they are already part of managed package."
 IFS="$OLD_IFS"
-
 
 #-----------------------------------------------
 # Identify and output all unused labels in repository
 #-----------------------------------------------
 
-echo "\n2 - Check all unused labels in complete Repository (pages, classes and lwc)"
+echo "\n2 - Check all unused labels in complete Repository (pages, classes and LWC)"
 
 #-----------------------------------------------
 # Assumption *.js-meta.xml prefix is component directory name 
@@ -146,10 +145,10 @@ done
 
 if [ ${#UNUSED_LABELS[@]} -ne 0 ]; then
     echo "\t COUNT =" ${#UNUSED_LABELS[@]} $NEEDS_FIX
+    echo "\n\t📝 Note:- Before fixing unused labels, check if other repositories are dependent on it."
 else
     echo $ALL_GOOD
 fi
-echo "\n\t📝 Note:- Before fixing unused labels, check if other repositories are dependent on it."
 
 #-----------------------------------------------
 # Identify and output all labels used from other repositories
@@ -187,7 +186,7 @@ do
         for label in "${LWC_COMPONENT_LABELS[@]}"
         do  
 #-----------------------------------------------
-# Assumption *Labels.js file do not use label  
+# Assumption *Labels.js file will either import or export labels, not directly use them
 #-----------------------------------------------
             LABEL_COUNT_IN_JS=0
             for js_file in $(ls "$LWC_COMPONENT_PATH"/*.js | grep -v "Labels.js")

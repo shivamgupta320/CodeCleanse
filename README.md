@@ -26,7 +26,7 @@ Dead pieces of code spring up naturally during software development. Remove dead
 - Before fixing unused labels, check if other repositories are dependent on it.
 
 ## Usage
-Run complete script inside CodeCleanse within repository
+Run complete script inside CodeCleanse within repository \
 `$ ./codeCleanse.sh`
 
 **Future Scope**
