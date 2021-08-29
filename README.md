@@ -11,7 +11,7 @@ Currently supported Code cleanup process is Label Validator.
 - Check all unused imported Labels in LWC Components [4]
 
 **Assumptions**
-Below assumptions are made for simplification and code structure point of view.
+> Below assumptions are made for simplification and code structure point of view.
 
 - `<fullName>...</fullName>` tags are in single line
 - `<value>...</value>` tags are in single line
