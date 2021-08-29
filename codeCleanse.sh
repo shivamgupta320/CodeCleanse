@@ -1,10 +1,10 @@
 #!/bin/sh
 #title           :codeCleanse.sh
 #description     :Code Cleanse aims to find all unused labels of Repository.
-#author		     :Shivam Gupta, shivamgupta@salesforce.com
+#author          :Shivam Gupta, shivamgupta@salesforce.com
 #date            :20210830
 #version         :1.0.0    
-#usage		     :./codeCleanse.sh
+#usage           :./codeCleanse.sh
 #notes           :Change stored PATH's as per usage
 #bash_version    :3.2.57(1)-release
 ########################################################################################################
