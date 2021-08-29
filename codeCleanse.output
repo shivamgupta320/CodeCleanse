@@ -1,0 +1,92 @@
+
+
+	 🍂🍂 Running - Code Cleanse 🍂🍂
+	 🍂🍂    Team Everglades     🍂🍂
+
+1 - Check duplicate values within CustomLabels.labels
+	 Duplicate <value> Found   👉 Attributes
+	 Duplicate <value> Found   👉 {0} / {1}
+	 Duplicate <value> Found   👉 {0} {1}
+	 COUNT = 3  , Needs Fix 🩹
+
+	📝 Note:- Before fixing duplicate labels, check if they are already part of managed package.
+
+2 - Check all unused labels in complete Repository (pages, classes and lwc)
+	 Unused Label Found        👉 upcFor
+	 Unused Label Found        👉 upcTimingFrequency
+	 Unused Label Found        👉 upcTooManyRecordsSelected
+	 Unused Label Found        👉 upcCompareVersionSubTitle
+	 COUNT = 4 , Needs Fix 🩹
+
+	📝 Note:- Before fixing unused labels, check if other repositories are dependent on it.
+
+3 - Check all labels imported from other repositories
+	 Other repo label found    👉 WorkSetUpdateNotAllowedOwnedBy
+	 Other repo label found    👉 upcWorkSetItemDeleteBtn
+	 Other repo label found    👉 upcWorkSetItemMoveBtn
+	 Other repo label found    👉 upcWorkSetItemType
+	 Other repo label found    👉 upcWorkSetItemName
+	 Other repo label found    👉 upcWorkSetItemVersion
+	 Other repo label found    👉 upcWorkSetItemAction
+	 Other repo label found    👉 upcWorkSetDeleteModal
+	 Other repo label found    👉 upcWorkSetProjectDisabled
+	 Other repo label found    👉 PCVersionName
+	 Other repo label found    👉 PCVersionAvailability
+	 Other repo label found    👉 PCAvailabilityVersionHelpText
+	 Other repo label found    👉 Cancel
+	 Other repo label found    👉 PCNewVersion
+	 Other repo label found    👉 PCVersionStartDate
+	 Other repo label found    👉 PCVersionEndDate
+	 Other repo label found    👉 PCVersionCreateSuccess
+	 Other repo label found    👉 Save
+	 Other repo label found    👉 SavingWithDots
+	 Other repo label found    👉 PCToastSuccessTitle
+	 Other repo label found    👉 PCToastErrorTitle
+	 Other repo label found    👉 PCCreateVersionDisabled
+	 Other repo label found    👉 PCNewVersionNotSupported
+	 Other repo label found    👉 upcWorkSetItemMoveMessage
+	 Other repo label found    👉 upcWorkSetItemDoneBtn
+	 Other repo label found    👉 upcWorkSetSelect
+	 Other repo label found    👉 upcWorkSetItemMovePanelTitle
+	 Other repo label found    👉 upcWorkSetModalWindowMessage
+	 Other repo label found    👉 upcWorkSetItemProceedBtn
+	 Other repo label found    👉 Done
+	 Other repo label found    👉 PCVersion
+	 Other repo label found    👉 CreatedDate
+	 Other repo label found    👉 PCNewVersion
+	 Other repo label found    👉 PCToastErrorTitle
+	 Other repo label found    👉 PCNoVersionFound
+	 Other repo label found    👉 PCVersionHistoryDisabled
+	 Other repo label found    👉 PCVersionHistoryNotSupported
+	 Other repo label found    👉 PCVersionStartDate
+	 Other repo label found    👉 PCVersionEndDate
+	 Other repo label found    👉 upcWorkSetDetails
+	 Other repo label found    👉 upcWorkSetItems
+	 COUNT = 41 , Needs Fix 🩹
+
+4 - Check all unused imported Labels in LWC Components
+	 Unused Label import Found 👉 upcDelete in upcPicklistRelease
+	 Unused Label import Found 👉 upcEntryDelete in upcPromotionDataUtils
+	 Unused Label import Found 👉 upcVersion in upcPromotionItemTable
+	 Unused Label import Found 👉 upcEligibleFor in upcPromotionItemTable
+	 Unused Label import Found 👉 upcRequires in upcPromotionItemTable
+	 Unused Label import Found 👉 upcSelectAValue in upcPricelistEntryPropertyPanel
+	 Unused Label import Found 👉 upcEnterAValue in upcPricelistEntryPropertyPanel
+	 Unused Label import Found 👉 upcSelectPricingVariable in upcPricelistEntryPropertyPanel
+	 Unused Label import Found 👉 upcProductIsRequired in upcPricelistEntryPropertyPanel
+	 Unused Label import Found 👉 upcPriceListMandatory in upcPricelistEntryPropertyPanel
+	 Unused Label import Found 👉 upcDisplayText in upcVersionComparisonUtils
+	 Unused Label import Found 👉 upcStatus in upcVersionComparisonUtils
+	 Unused Label import Found 👉 upcCancel in upcProductRelease
+	 Unused Label import Found 👉 upcWorkSetModalWindowMessage in upcWorkSetItemPropertyPanel
+	 Unused Label import Found 👉 CreatedDate in pcVersionHistory
+	 Unused Label import Found 👉 upcPromotionDescription in upcPromotionItemPropertyPanel
+	 Unused Label import Found 👉 upcEligibleForCustomers in upcPromotionItemPropertyPanel
+	 Unused Label import Found 👉 upcRemoveOverrideCardinality in upcPromotionItemPropertyPanel
+	 Unused Label import Found 👉 upcShowActiveOnly in upcTableSearch
+	 Unused Label import Found 👉 upcSearch in upcTableSearch
+	 Unused Label import Found 👉 upcEntryDelete in upcPriceListDataUtils
+	 Unused Label import Found 👉 upcCharge in upcBaseTable
+	 Unused Label import Found 👉 upcCost in upcBaseTable
+	 Unused Label import Found 👉 upcValue in upcPriceListUpsert
+	 COUNT = 24 , Needs Fix 🩹
