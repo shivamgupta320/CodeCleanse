@@ -2,6 +2,9 @@
 CodeCleanse aims to automate sophisticated code cleanup process to increase productivity.
 Currently supported Code cleanup process is Label Validator.
 
+# Abstract
+Dead pieces of code spring up naturally during software development. Remove dead code wherever possible. It slows you down, requires maintenance over time, costs time and money.
+
 **Version 1.0.0**
 
 **Label Validator menu**
