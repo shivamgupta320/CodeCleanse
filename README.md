@@ -11,9 +11,12 @@ Currently supported Code cleanup process is Label Validator.
 - Check all unused imported Labels in LWC Components [4]
 
 **Assumptions**
+Below assumptions are made for simplification and code structure point of view.
+
 - `<fullName>...</fullName>` tags are in single line
 - `<value>...</value>` tags are in single line
-- *.js-meta.xml prefix is component directory name
+- `*.js-meta.xml` prefix is component directory name
+- `*Labels.js` file do not use label
 
 **Notes**
 - Before fixing duplicate labels, check if they are already part of managed package.

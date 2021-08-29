@@ -184,6 +184,9 @@ do
     if [ ${#LWC_COMPONENT_LABELS[@]} -ne 0 ]; then
         for label in "${LWC_COMPONENT_LABELS[@]}"
         do  
+#-----------------------------------------------
+# Assumption *Labels.js file do not use label  
+#-----------------------------------------------
             LABEL_COUNT_IN_JS=0
             for js_file in $(ls "$LWC_COMPONENT_PATH"/*.js | grep -v "Labels.js")
             do 
