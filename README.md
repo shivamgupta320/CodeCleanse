@@ -12,6 +12,25 @@ Dead pieces of code spring up naturally during software development. Remove dead
 - Check all unused labels in complete Repository (pages, classes and LWC) [2]
 - Check all labels imported from other repositories [3]
 - Check all unused imported Labels in LWC Components [4]
+> **Future Scope**
+> - Check if any label is imported in non *Labels.js
+> - Check if label used in js or html but not imported.
+
+**Future Scope**
+> **Most Common issues in pr's**
+> - const vs let vs var
+> - console log, debugger
+> - pubsub register and unregister
+> - XSS
+> **Preferred component usage in html**
+> - Enforce standards to use same component for all components, increases reusability of future enhancements
+> - Prefer Salesforce standard components vs via_components, for accessibility and rtl supportction
+> **Experimental feature or not fully supported features based on browser support by salesforce**
+> - JS experimental and not fully supported functionality not used
+> - CSS experimental and not fully supported functionality not used
+> - CSS experimental and not fully supported functionality not used
+> **Most Common issues in Unit testing related pr's**
+> - Unit test template for LWC component
 
 **Assumptions**
 > Below assumptions are made for simplification and from code structure point of view.
